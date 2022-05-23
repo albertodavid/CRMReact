@@ -22,15 +22,15 @@ const Layout = () => {
           <Link
             to="/clientes/nuevo"
             className={`${
-                urlActual === "/clientes/nuevo" ? "text-blue-200" : "text-white"
-              } text-2xl block mt-2 hover:text-blue-200`}
+              urlActual === "/clientes/nuevo" ? "text-blue-200" : "text-white"
+            } text-2xl block mt-2 hover:text-blue-200`}
           >
             Nuevo Cliente
           </Link>
         </nav>
       </div>
 
-      <div className="md:w-5/6 p-10">
+      <div className="md:w-5/6 p-10 md:h-screen overflow-scroll">
         <Outlet />
       </div>
     </div>
